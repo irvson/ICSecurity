@@ -1,0 +1,39 @@
+aside.minisidebar {
+    position: fixed;
+    height: 100%;
+    padding: 32px 24px;
+    background: linear-gradient(329.54deg, #15739A 0%, #15739A 100%);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  aside.minisidebar img {
+    width: 70px;
+  }
+  
+  aside.minisidebar footer a,
+  aside.minisidebar footer button {
+    width: 48px;
+    height: 48px;
+  
+    border: 0;
+  
+    background: #12AFCB;
+    border-radius: 16px;
+  
+    cursor: pointer;
+  
+    transition: 0.2s;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  aside.minisidebar footer a:hover,
+  aside.minisidebar footer button:hover {
+    background: #17D6EB;
+  }

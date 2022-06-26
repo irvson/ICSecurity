@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background: #8cd0dd;
+}
+/*===Sidebar=====*/
+.sidebar{
+  position: fixed;
+  padding: 10px 14px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background:linear-gradient(329.54deg,#12AFCB 0%,#12AFCB 100%)
+}
+
+.sidebar.close{
+  width: 89px;
+}
+
+.sidebar.close .li-text{
+  opacity: 0;
+}
+
+.sidebar .menu-bar{
+
+  height:calc(100% -50px) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.sidebar .image-header img{
+  width: 50px;
+  
+  }
+
+  .sidebar header{
+    position: relative;
+  }
+
+  .sidebar header .image-header{
+  display: flex;
+  align-items: center;
+  
+}
+.sidebar header .li-text{
+  font-family: 'Nunito', sans-serif;
+  font-weight:bold;
+  color: #333;
+  font-size: 20px;
+}
+
+.sidebar header .icon-header{
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%) ;
+  height: 35px;
+  width: 35px;
+  background: #17D6EB;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: azure;
+  font-size: 22px;
+}
+
+.sidebar li{
+  height: 50px;
+  margin-top: 2rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar .search{
+  background:#f6f5ff;
+}
+.sidebar .search-icon{
+  min-width: 59px;
+  font-size: 33px;
+  color: #333 ;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search input{
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  outline: none;
+  border-radius:10% ;
+  border: none;
+}
+
+.sidebar li .icon{
+  min-width: 59px;
+  font-size: 33px;
+  color: #FFF ;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.sidebar li .li-text{
+ color: rgb(215, 246, 250);  
+ transition: .10s;
+
+}
+.sidebar li .li-text:hover{
+  color: #FFF;  
+ }
+
+ 
+.sidebar li a{
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  
+}
+.sidebar li a:hover{
+  background: #17D6EB;
+}
+
+
+@media screen and (max-width: 315px) {
+  .sidebar {
+      display: none;
+  }
+  .sidebar .close{
+    display: none;
+  }
+
+  .sidebar .menubar {
+      grid-template-columns: 1fr;
+  }
+
+  
+}
